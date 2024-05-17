@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.BarraP {
+  background-color: rgb(53, 58, 105);
+  padding: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 0 0 20px 20px;
+}
+
+.Barra-button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.Barra-button2 {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.Barra-button + .Barra-button2 {
+  margin-left: 880px;
+}
+.nav-button:hover {
+  background-color: #45a049;
+}
