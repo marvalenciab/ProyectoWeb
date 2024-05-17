@@ -1,14 +1,27 @@
-import './App.css';
-import NavBar from "./componentes/NavBar"
-import Cuerpo from"./componentes/Cuerpo"
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Sockect } from "./pages/principal";
+import SingUp from "./componentes/SingUp";
+import NavBar from "./componentes/NavBar";
+import { useState } from "react";
+import LogIng from "./componentes/LogIng";
+import SobreNosotros from "./componentes/SobreNosaotros";
 function App() {
+    const [activoPrin, setactivoPrin] = useState(false)
+
   return (
-      <div> 
-         <NavBar/>
-         <Cuerpo/>
-        <h1>Bienvenidos a mi app</h1>
-            
-      </div>    
+    <BrowserRouter>
+    {
+      activoPrin === true ? <NavBar NameButton='Eimy'></NavBar> :<NavBar NameButton='Jefernne'></NavBar>
+    }
+      
+      <Routes>
+        <Route path="/"  element={<Sockect/>}></Route>
+        <Route path='/about' element={<SingUp></SingUp>} />
+        <Route path='/login' element={<LogIng></LogIng>} />
+        <Route path='/sobreNosotros' element={<SobreNosotros></SobreNosotros>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
