@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.BarraP {
+  background-color: rgb(53, 58, 105);
+  padding: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 0px 0px 30px 30px;
+  height: 8vh;
+}
+
+.nav-button {
+  background-color: rgb(252, 28, 28);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
