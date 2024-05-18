@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../estilos-componentes/Cuerpo.css';
 
 function Cuerpo() {
+  
   return (
     <div class='container'>
       <div className='container__div'>
