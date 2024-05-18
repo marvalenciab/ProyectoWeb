@@ -10,7 +10,6 @@ function Principal() {
         </h2>
       </div>
       <div className='info1'>
-        <button className='logo'> </button>
         <h3>
           <strong>
             ¡Bienvenido a TradeTrove! Aquí encontrarás todo lo que necesitas para comenzar a invertir en el emocionante
@@ -20,13 +19,11 @@ function Principal() {
         </h3>
       </div>
       <div className='titulo'>
-        <button className='logo'> </button>
         <h3>
           <strong>¿Por qué elegir TradeTrove?</strong>
         </h3>
       </div>
       <div className='info2'>
-        <button className='logo'> </button>
         <h5>
           <ol>
             <li>
@@ -45,13 +42,11 @@ function Principal() {
         </h5>
       </div>
       <div className='titulo'>
-        <button className='logo'> </button>
         <h3>
           <strong>¿Listo para comenzar?</strong>
         </h3>
       </div>
       <div className='info1'>
-        <button className='logo'> </button>
         <h5>
           <strong>
             Regístrate ahora para acceder a todas las oportunidades de inversión que TradeTrove tiene para ofrecer.

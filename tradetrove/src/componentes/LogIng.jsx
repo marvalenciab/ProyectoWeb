@@ -1,34 +1,43 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 import '../estilos-componentes/Loguin.css';
 
-function Log() {
+function Loguin() {
+  const [showPassword, setShowPassword] = useState(false);
+
+  // Función para alternar la visibilidad de la contraseña
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
-    <div className='Container'>
-      <NavLink to='/Principal'>
-        <button className='logo'> </button>
-      </NavLink>
-      <div className='form-container'>
-        <form>
-          <label>
-            Nombre:
-            <input type='text' name='nombre' />
-          </label>
-          <br />
-          <label>
-            Correo Electrónico:
-            <input type='email' name='email' />
-          </label>
-          <br />
-          <label>
-            Contraseña:
-            <input type='password' name='password' />
-          </label>
-          <br />
-          <button type='submit'>Registrarse</button>
-        </form>
-      </div>
+    <div className='container'>
+      <form>
+        <label>
+          Nombre:
+          <input type='text' name='nombre' placeholder='Ingrese su nombre' />
+        </label>
+        <br />
+        <label>
+          Correo Electrónico:
+          <input type='email' name='email' placeholder='Ingrese su correo electrónico' />
+        </label>
+        <br />
+        <label>
+          Contraseña:
+          <div className='password-field'>
+            <input type={showPassword ? 'text' : 'password'} name='password' placeholder='Ingrese su contraseña' />
+            <button type='button' className='toggle-password' onClick={togglePasswordVisibility}>
+              {showPassword ? '🙈' : '👁️'}
+            </button>
+          </div>
+        </label>
+        <br />
+        <div className='Datos'>
+          <button type='submit'>LOG IN</button>
+        </div>
+      </form>
     </div>
   );
 }
-export default Log;
+
+export default Loguin;

@@ -6,9 +6,8 @@ function Cuerpo() {
   return (
     <div class='container'>
       <div className='container__div'>
-        <NavLink to='/Principal'>
-          <button className='logo'> </button>
-        </NavLink>
+        
+        
         <h1>
           {' '}
           <strong>!COMIENZA TU EXPERIENCIA!</strong>{' '}

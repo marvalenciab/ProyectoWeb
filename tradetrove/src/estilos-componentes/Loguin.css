@@ -1,83 +1,87 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.Container {
+.container {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-
-  position: relative;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  text-decoration: none;
-  margin-top: 70px;
-  align-items: center;
-}
-
-.buttons a {
-  padding: 30px;
-  margin: 20px;
-  text-align: center;
-  text-decoration: none;
-  width: 250px;
-  color: white;
-  background-color: rgb(3, 11, 88);
-  border-radius: 5px;
-  font-size: 20px;
-}
-.btn {
-  background-color: purple;
-}
-.container__div {
-  margin-top: 0px;
-  background-color: rgb(147, 153, 215);
-  height: 600px;
-  border-radius: 600px;
-  text-align: center;
-  width: 1200px;
-  align-items: center;
-  position: relative;
-}
-
-article h1 {
-  padding-top: 50px;
-  color: black;
-  font-size: 50px;
-}
-
-article p {
-  font-size: 20px;
-}
-article button {
-  font-size: 50px;
   border-radius: 150px;
+  background-color: rgb(147, 153, 215);
+  padding: 40px;
+  margin: 60px;
+  width: 1060px;
+  height: 450px;
 }
-.logo {
-  height: 160px;
-  width: 160px;
-  border-radius: 100%;
-  position: absolute;
-  left: 530px;
-  top: -40%;
-  transform: translateY(100%);
-  background-image: url('../img//logo.jpg');
-  background-size: contain;
-}
+
 h1 {
-  margin-top: 100px;
-  color: black;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-container {
+  flex: 1;
+}
+
+input {
+  padding: 20px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+}
+
+.label-text {
+  font-size: 20px;
+  color: #fff;
+  margin-right: 20px;
+  text-align: right;
+}
+
+.Datos {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(9, 9, 11);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  text-align: center; /* Centra el contenido del botón */
+}
+
+.Datos:hover {
+  background-color: rgb(80, 86, 160);
+}
+
+.toggle-password {
+  font-size: 14px;
+  padding: 5px;
+  max-width: 30px;
+  min-width: 30px;
+  margin-left: 30px;
 }
