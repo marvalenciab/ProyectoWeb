@@ -5,23 +5,24 @@ import LogIng from './componentes/LogIng';
 import NavBar from './componentes/NavBar';
 import Principal from './componentes/Principal';
 import SingUp from './componentes/SingUp';
-import SobreNosotros from './componentes/SobreNosotros';
+import SobreNosotros from './componentes/SobreNosaotros';
 import { Sockect } from './pages/principal';
-
 function App() {
-  const [activoPrin, setActivoPrin] = useState(false);
+  const [activoPrin, setactivoPrin] = useState(false);
 
   return (
     <BrowserRouter>
-      {activoPrin ? <NavBar NameButton='Eimy' /> : <NavBar NameButton='Jefernne' />}
+      {activoPrin === true ? <NavBar NameButton='Eimy'></NavBar> : <NavBar NameButton='Jefernne'></NavBar>}
+
       <Routes>
-        <Route path='/' element={<Sockect />} />
-        <Route path='/about' element={<SingUp />} />
-        <Route path='/login' element={<LogIng />} />
-        <Route path='/sobreNosotros' element={<SobreNosotros />} />
-        <Route path='/Principal' element={<Principal />} />
+        <Route path='/' element={<Sockect />}></Route>
+        <Route path='/about' element={<SingUp></SingUp>} />
+        <Route path='/login' element={<LogIng></LogIng>} />
+        <Route path='/sobreNosotros' element={<SobreNosotros></SobreNosotros>} />
+        <Route path='/Principal' element={<Principal></Principal>} />
       </Routes>
     </BrowserRouter>
   );
 }
+
 export default App;
