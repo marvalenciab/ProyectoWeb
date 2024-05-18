@@ -1,3 +1,4 @@
+
 import React from "react";
 import {NavLink} from "react-router-dom"
 import "../estilos-componentes/NavBar.css"
@@ -9,5 +10,6 @@ function NavBar(){
         </div>
         
     )
+
 }
 export default NavBar;
