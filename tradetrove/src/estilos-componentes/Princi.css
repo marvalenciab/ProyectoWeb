@@ -18,13 +18,8 @@ html {
   background-color: rgb(147, 153, 215);
   padding-block-end: 10px;
   margin-top: 60px;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #fff; /* Color de fondo para visualización */
+  width: 660px;
+  height: 150px;
 }
 
 h1 {
@@ -49,11 +44,16 @@ p {
   border-radius: 400px;
   background-color: rgb(103, 110, 195);
   padding-block-end: 5px;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin-left: 480px;
+  margin-right: 480px;
   margin-top: 25px;
 }
 .info1 h5 {
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+.info1 h3 {
   color: white;
   text-align: center;
   margin-top: 25px;
