@@ -20,6 +20,7 @@ body {
     margin: 0 auto;
     border-radius: 0px 0px 30px 30px;
     height: 8vh;
+    position: relative;
   }
   
   .nav-button {

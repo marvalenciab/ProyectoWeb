@@ -70,9 +70,9 @@ article button {
   width: 160px;
   border-radius: 100%;
   position: absolute;
-  left: 530px;
-  top: -40%;
-  transform: translateY(100%);
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
   background-image: url('../img//logo.jpg');
   background-size: contain;
 }
