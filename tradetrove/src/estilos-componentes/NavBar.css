@@ -11,6 +11,9 @@ body {
   }
   
   .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: rgb(53, 58, 105);
     padding: 10px;
     max-width: 100%; 
