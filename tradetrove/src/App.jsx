@@ -6,6 +6,7 @@ import NavBar from "./componentes/NavBar";
 import { useState } from "react";
 import LogIng from "./componentes/LogIng";
 import SobreNosotros from "./componentes/SobreNosaotros";
+import Principal from "./componentes/Principal";
 function App() {
     const [activoPrin, setactivoPrin] = useState(false)
 
@@ -16,10 +17,12 @@ function App() {
     }
       
       <Routes>
-        <Route path="/"  element={<Sockect/>}></Route>
+        <Route path="/" element={<Principal></Principal>}></Route>
+        <Route path="/singLog"  element={<Sockect/>}></Route>
         <Route path='/about' element={<SingUp></SingUp>} />
         <Route path='/login' element={<LogIng></LogIng>} />
         <Route path='/sobreNosotros' element={<SobreNosotros></SobreNosotros>} />
+       
       </Routes>
     </BrowserRouter>
   );
