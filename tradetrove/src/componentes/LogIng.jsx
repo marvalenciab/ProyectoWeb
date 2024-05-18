@@ -1,8 +1,34 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../estilos-componentes/Loguin.css';
 
-export default function LogIng() {
+function Log() {
   return (
-    <div>
-        <h1>LogIng</h1>
-        </div>
-  )
+    <div className='Container'>
+      <NavLink to='/Principal'>
+        <button className='logo'> </button>
+      </NavLink>
+      <div className='form-container'>
+        <form>
+          <label>
+            Nombre:
+            <input type='text' name='nombre' />
+          </label>
+          <br />
+          <label>
+            Correo Electrónico:
+            <input type='email' name='email' />
+          </label>
+          <br />
+          <label>
+            Contraseña:
+            <input type='password' name='password' />
+          </label>
+          <br />
+          <button type='submit'>Registrarse</button>
+        </form>
+      </div>
+    </div>
+  );
 }
+export default Log;

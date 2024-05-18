@@ -5,20 +5,19 @@ function Principal() {
   return (
     <div>
       <div className='Container'>
-        <button className='logo'> </button>
         <h2>
           <strong>¡TU PLATAFORMA PARA</strong> <strong>INVERTIR CON CONFIANZA!</strong>
         </h2>
       </div>
       <div className='info1'>
         <button className='logo'> </button>
-        <h5>
+        <h3>
           <strong>
             ¡Bienvenido a TradeTrove! Aquí encontrarás todo lo que necesitas para comenzar a invertir en el emocionante
             mundo de las acciones. Desde empresas globales hasta oportunidades locales, estamos aquí para guiarte en tu
             viaje hacia el éxito financiero.
           </strong>
-        </h5>
+        </h3>
       </div>
       <div className='titulo'>
         <button className='logo'> </button>
