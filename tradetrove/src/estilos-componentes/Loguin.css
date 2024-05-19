@@ -1,12 +1,50 @@
-.container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: auto;
+  width: auto;
+}
+
+.containers {
   margin-top: 80px;
+  margin-left: 350px;
   background-color: rgb(147, 153, 215);
   height: 600px;
-  border-radius: 600px;
+  border-radius: 200px;
   text-align: center;
-  width: 1200px;
+  width: 600px;
   align-items: center;
   position: relative;
+  padding: 20px; /* Agregar padding para margen interno */
+}
+
+.containers_t {
+  background: rgb(39, 45, 108);
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.containers_titulo {
+  color: black;
+  margin: 0;
+}
+
+.containers_letra_titulo {
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -17,48 +55,50 @@ h1 {
   text-align: center;
 }
 
+.containers_parrafo {
+  color: white;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-top: 50px;
+  text-align: center; /* Alinear el texto a la derecha */
+  margin-right: 10px;
+}
+
 .form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 400px;
-  margin: auto;
+  width: 90%;
+  height: 65%;
+  margin-top: 8%;
 }
 
 .form-group {
   display: flex;
+  flex-direction: row;
+  margin-bottom: 22px;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  width: 100%;
 }
 
-.label-container {
+.label-containers {
   display: flex;
   align-items: center;
 }
 
-.input-container {
+.input-containers {
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 input {
-  padding: 20px;
-  margin-bottom: 40px;
+  flex: 1;
+  padding: 10px;
+  margin-bottom: 10px;
   font-size: 18px;
   border-radius: 15px;
+  width: 500px;
   border: none;
   background-color: #fff;
   color: #000;
-}
-
-.label-text {
-  font-size: 20px;
-  color: #fff;
-  margin-right: 20px;
-  text-align: right;
 }
 
 .Datos {
@@ -68,9 +108,12 @@ input {
   background-color: rgb(9, 9, 11);
   color: #fff;
   font-size: 16px;
-  cursor: pointer;
-  margin-left: 10px;
-  text-align: center; /* Centra el contenido del botón */
+  cursor: pointer; /* Ajusta el margen superior */
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 500px;
 }
 
 .Datos:hover {
@@ -82,5 +125,5 @@ input {
   padding: 5px;
   max-width: 30px;
   min-width: 30px;
-  margin-left: 30px;
+  cursor: pointer;
 }

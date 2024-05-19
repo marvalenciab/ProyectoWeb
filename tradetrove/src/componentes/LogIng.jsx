@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../estilos-componentes/Loguin.css';
 import { NavLink } from 'react-router-dom';
+import '../estilos-componentes/Loguin.css';
 
 function Loguin() {
   const [showPassword, setShowPassword] = useState(false);
@@ -11,38 +11,43 @@ function Loguin() {
   };
 
   return (
-    <div className='container'>
+    <div className='containers'>
+      <div className='containers_t'>
+        <div className='containers_titulo'>
+          <h1 className='containers_letra_titulo'>LOG IN</h1>
+        </div>
+      </div>
       <form>
         <label>
-          Nombre:
-          <input type='text' name='nombre' placeholder='Ingrese su nombre' />
+          <p className='containers_parrafo'>nombre completo: </p>
+          <input className='containers__input' type='text' name='nombre' placeholder='Ingrese su nombre' />
         </label>
         <br />
         <label>
-          Correo Electrónico:
-          <input type='email' name='email' placeholder='Ingrese su correo electrónico' />
+          <p className='containers_parrafo'>Correo electronico: </p>
+          <input className='containers__input' type='email' name='email' placeholder='Ingrese su correo electrónico' />
         </label>
         <br />
         <label>
-          Contraseña:
+          <p className='containers_parrafo'>Contraseña: </p>
           <div className='password-field'>
-            <input type={showPassword ? 'text' : 'password'} name='password' placeholder='Ingrese su contraseña' />
+            <input
+              className='containers__input'
+              type={showPassword ? 'text' : 'password'}
+              name='password'
+              placeholder='Ingrese su contraseña'
+            />
             <button type='button' className='toggle-password' onClick={togglePasswordVisibility}>
               {showPassword ? '🙈' : '👁️'}
             </button>
           </div>
         </label>
         <br />
-        <NavLink to="/targeta">
-        <div className='Datos'>
-       
-          <button type='submit'>LOG IN</button>
-         
-        </div>
+        <NavLink to='/targeta'>
+          <div className='Datos'>
+            <button type='submit'>LOG IN</button>
+          </div>
         </NavLink>
-
-       
-        
       </form>
     </div>
   );
