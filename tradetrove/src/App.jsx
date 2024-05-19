@@ -7,6 +7,7 @@ import { useState } from "react";
 import LogIng from "./componentes/LogIng";
 import SobreNosotros from "./componentes/SobreNosaotros";
 import Principal from "./componentes/Principal";
+import Targeta from "./componentes/Targeta";
 function App() {
     const [activoPrin, setactivoPrin] = useState(false)
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/about' element={<SingUp></SingUp>} />
         <Route path='/login' element={<LogIng></LogIng>} />
         <Route path='/sobreNosotros' element={<SobreNosotros></SobreNosotros>} />
+        <Route path="/targeta" element={<Targeta></Targeta>}></Route>
        
       </Routes>
     </BrowserRouter>

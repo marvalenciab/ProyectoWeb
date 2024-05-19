@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../estilos-componentes/Loguin.css';
+import { NavLink } from 'react-router-dom';
 
 function Loguin() {
   const [showPassword, setShowPassword] = useState(false);
@@ -32,9 +33,16 @@ function Loguin() {
           </div>
         </label>
         <br />
+        <NavLink to="/targeta">
         <div className='Datos'>
+       
           <button type='submit'>LOG IN</button>
+         
         </div>
+        </NavLink>
+
+       
+        
       </form>
     </div>
   );

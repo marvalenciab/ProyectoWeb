@@ -1,13 +1,12 @@
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 150px;
+  margin-top: 80px;
   background-color: rgb(147, 153, 215);
-  padding: 40px;
-  margin: 60px;
-  width: 1060px;
-  height: 450px;
+  height: 600px;
+  border-radius: 600px;
+  text-align: center;
+  width: 1200px;
+  align-items: center;
+  position: relative;
 }
 
 h1 {

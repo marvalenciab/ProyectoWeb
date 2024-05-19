@@ -31,6 +31,19 @@ body {
     
    
   }
+  .logo {
+    
+    height: 65px;
+    width: 65px;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('../img//logo.jpg');
+    background-size: contain;
+    
+  }
   
 
 
