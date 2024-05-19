@@ -1,0 +1,47 @@
+.Acercaprincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+}
+
+.tit {
+  display: flex;
+  justify-content: center;
+  background-color: #9298d6;
+  border-radius: 70px;
+  width: 85%;
+  padding: 10px;
+  font-size: 25pt;
+  font-weight: bold;
+  color: #0c0f29;
+  margin: 20px;
+}
+
+.contenedorT {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.mision {
+  display: flex;
+  width: 25%;
+  padding: 20px;
+}
+
+.infor {
+  display: flex;
+  height: 300px;
+  padding: 20px;
+  width: 75%;
+}
+
+.informacion11 {
+  text-align: center;
+}
+
+.informacion1 {
+  text-align: center;
+}
