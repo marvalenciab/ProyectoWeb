@@ -23,6 +23,7 @@ function App() {
         <Route path='/login' element={<LogIng></LogIng>} />
         <Route path='/sobreNosotros' element={<SobreNosotros></SobreNosotros>} />
         <Route path='/targeta' element={<Menuprincipal></Menuprincipal>}></Route>
+        {/* <Route path='/compra' element={<Compra></Compra>}></Route> */}
       </Routes>
     </BrowserRouter>
   );
