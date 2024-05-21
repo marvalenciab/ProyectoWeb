@@ -1,19 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../estilos-componentes/Cuerpo.css';
+import styles from '../estilos-componentes/Cuerpo.module.css';
 
 function Cuerpo() {
-  
   return (
-    <div class='container'>
-      <div className='container__div'>
-        
-        
+    <div className={styles.container}>
+      <div className={styles.container__div}>
         <h1>
           {' '}
           <strong>!COMIENZA TU EXPERIENCIA!</strong>{' '}
         </h1>
-        <div class='buttons'>
+        <div className={styles.buttons}>
           <NavLink to='/login'>
             <a href=''>Log in</a>
           </NavLink>

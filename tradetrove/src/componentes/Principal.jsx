@@ -1,15 +1,15 @@
 import React from 'react';
-import '../estilos-componentes/Princi.css';
+import styles from '../estilos-componentes/Princi.module.css';
 
 function Principal() {
   return (
     <div>
-      <div className='Container'>
+      <div className={styles.Container}>
         <h2>
           <strong>¡TU PLATAFORMA PARA</strong> <strong>INVERTIR CON CONFIANZA!</strong>
         </h2>
       </div>
-      <div className='info1'>
+      <div className={styles.info1}>
         <h3>
           <strong>
             ¡Bienvenido a TradeTrove! Aquí encontrarás todo lo que necesitas para comenzar a invertir en el emocionante
@@ -18,12 +18,12 @@ function Principal() {
           </strong>
         </h3>
       </div>
-      <div className='titulo'>
+      <div className={styles.titulo}>
         <h3>
           <strong>¿Por qué elegir TradeTrove?</strong>
         </h3>
       </div>
-      <div className='info2'>
+      <div className={styles.info2}>
         <h5>
           <ol>
             <li>
@@ -41,12 +41,12 @@ function Principal() {
           </ol>
         </h5>
       </div>
-      <div className='titulo'>
+      <div className={styles.titulo}>
         <h3>
           <strong>¿Listo para comenzar?</strong>
         </h3>
       </div>
-      <div className='info1'>
+      <div className={styles.info1}>
         <h5>
           <strong>
             Regístrate ahora para acceder a todas las oportunidades de inversión que TradeTrove tiene para ofrecer.

@@ -102,7 +102,8 @@ input {
 }
 
 .Datos {
-  padding: 10px 20px;
+  padding: 10px;
+  margin: 10px;
   border-radius: 5px;
   border: none;
   background-color: rgb(9, 9, 11);
