@@ -94,7 +94,7 @@
   border-radius: 10px;
   background-color: #353a69;
   position: absolute;
-  top: 87%; /* Ajusta la posición vertical del círculo dentro del div padre */
+  top: 83%; /* Ajusta la posición vertical del círculo dentro del div padre */
   left: 16%;
   transform: translate(-100%, -80%);
 }
@@ -104,7 +104,7 @@
   border-radius: 10px;
   background-color: #353a69;
   position: absolute;
-  top: 87%; /* Ajusta la posición vertical del círculo dentro del div padre */
+  top: 83%; /* Ajusta la posición vertical del círculo dentro del div padre */
   left: 41%;
   transform: translate(-100%, -80%);
 }
@@ -114,7 +114,7 @@
   border-radius: 10px;
   background-color: #353a69;
   position: absolute;
-  top: 87%; /* Ajusta la posición vertical del círculo dentro del div padre */
+  top: 83%; /* Ajusta la posición vertical del círculo dentro del div padre */
   left: 91%;
   transform: translate(-100%, -80%);
 }
@@ -124,7 +124,7 @@
   border-radius: 10px;
   background-color: #353a69;
   position: absolute;
-  top: 87%; /* Ajusta la posición vertical del círculo dentro del div padre */
+  top: 83%; /* Ajusta la posición vertical del círculo dentro del div padre */
   left: 66%;
   transform: translate(-100%, -80%);
 }

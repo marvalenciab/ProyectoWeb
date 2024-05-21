@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Compra from './componentes/Comprar';
 import LogIng from './componentes/LogIng';
 import Menuprincipal from './componentes/Menuprincipal';
 import NavBar from './componentes/NavBar';
@@ -23,7 +24,7 @@ function App() {
         <Route path='/login' element={<LogIng></LogIng>} />
         <Route path='/sobreNosotros' element={<SobreNosotros></SobreNosotros>} />
         <Route path='/targeta' element={<Menuprincipal></Menuprincipal>}></Route>
-        {/* <Route path='/compra' element={<Compra></Compra>}></Route> */}
+        <Route path='/compra' element={<Compra></Compra>}></Route>
       </Routes>
     </BrowserRouter>
   );
