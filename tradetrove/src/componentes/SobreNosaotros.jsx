@@ -1,6 +1,6 @@
 import info from '../data/informacion';
 import { default as mision } from '../data/mision';
-import '../estilos-componentes/SobreNosaotros.css';
+import styles from '../estilos-componentes/SobreNosaotros.module.css';
 import Card from './Targeta';
 
 export default function SobreNosotros() {
@@ -14,9 +14,9 @@ export default function SobreNosotros() {
 
   return (
     <>
-      <div className='Acercaprincipal'>
-        <div className='tit'>¡ACERCA DE NOSOTROS!</div>
-        <div className='informacion11'>
+      <div className={styles.Acercaprincipal}>
+        <div className={styles.tit}>¡ACERCA DE NOSOTROS!</div>
+        <div className={styles.informacion11}>
           <p>
             En TradeTrove, estamos comprometidos a brindarte una experiencia excepcional en el mundo de las inversiones
             en acciones. Nuestra plataforma se ha desarrollado con la misión de democratizar el acceso a las
@@ -24,11 +24,11 @@ export default function SobreNosotros() {
             de tu nivel de experiencia.
           </p>
         </div>
-        <div className='contenedorT'>
-          <div className='mision'>{misionList}</div>
-          <div className='infor'>{infoList}</div>
+        <div className={styles.contenedorT}>
+          <div className={styles.mision}>{misionList}</div>
+          <div className={styles.infor}>{infoList}</div>
         </div>
-        <div className='informacion1'>
+        <div className={styles.informacion1}>
           <p>
             Únete a la Comunidad de TradeTrove Descubre por qué miles de inversores confian en TradeTrove para alcanzar
             sus metas financieras. Regístrate ahora y comienza tu viaje de inversión con nosotros

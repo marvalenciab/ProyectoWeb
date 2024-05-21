@@ -1,6 +1,6 @@
 import React from 'react';
 import dataCompra from '../data/compra';
-import '../estilos-componentes/Comprar.module.css';
+import styles from '../estilos-componentes/Comprar.module.css';
 import Card from './TargetaCompra';
 
 function Comprar() {
@@ -9,12 +9,12 @@ function Comprar() {
   });
 
   return (
-    <div className='App'>
-      <div className='titulo'>
+    <div className={styles.App}>
+      <div className={styles.titulo}>
         <h1>ACCIONES DISPONIBLES</h1>
       </div>
-      <div className='contenido'>{dataList}</div>
-      <button className='comprar'>Comprar</button>
+      <div className={styles.contenido}>{dataList}</div>
+      <button className={styles.comprar}>Comprar</button>
     </div>
   );
 }
