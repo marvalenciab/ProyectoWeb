@@ -14,6 +14,7 @@ function App() {
   const [activoPrin, setactivoPrin] = useState(false);
 
   return (
+    
     <BrowserRouter>
       {activoPrin === true ? <NavBar NameButton='Eimy'></NavBar> : <NavBar NameButton='Jefernne'></NavBar>}
 
