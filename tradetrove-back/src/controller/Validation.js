@@ -3,12 +3,16 @@ import { CrearToken } from '../libs/jwt.js';
 export const Register = async (req, res) => {
   try {
     const { nombre, pais, correo, contraseña } = req.body;
-
+    
     let sueldo = 0.0;
     const [validar] = await pool.query(`select correo from usuarios where correo = '${correo}'`);
 
     if (validar.length > 1) {
       return res.status(409).json({ message: 'El correo ya existe en la base de datos' });
+    if (validar.length >= 1) {
+      return res
+        .status(409)
+        .json({ message: "El correo ya existe en la base de datos" });
     }
 
     if (!nombre || !pais || !correo || !contraseña) {
@@ -23,8 +27,10 @@ export const Register = async (req, res) => {
     const token = await CrearToken({ idusuario: row.insertId });
     res.cookie('token', token);
 
+    console.log(nombre,pais,correo,contraseña)
     //    console.log(row)
     res.status(200).json({ message: 'El usuario ingreso correctamente' });
+    res.status(200).json({message:"Correcto al agregar"})
   } catch (error) {
     return res.status(500).json({
       message: 'Error. Hubo un error en el proceso de la base de datos',

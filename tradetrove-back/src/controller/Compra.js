@@ -14,4 +14,4 @@ export const consultarAcciones = async (req, res) => {
     return res.status(500).json({
       message: 'Error. Hubo un error en el proceso de la base de datos',
     });
-  }
+  }};
