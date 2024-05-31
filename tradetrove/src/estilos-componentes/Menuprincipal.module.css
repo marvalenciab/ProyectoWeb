@@ -1,0 +1,130 @@
+.Menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.barra2 {
+  display: flex;
+  padding: 10px;
+  margin: 70px;
+  width: 80%;
+  border-radius: 500px;
+  height: 100px;
+  background-color: #9298d6;
+  justify-content: center;
+}
+
+.App1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.circle1 {
+  display: flex;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #353a69;
+  position: absolute;
+  top: 50%; /* Ajusta la posición vertical del círculo dentro del div padre */
+  left: 50%;
+  transform: translate(-50%, -80%);
+  background-image: url('../img//logo.jpg');
+  background-size: contain;
+}
+
+.img {
+  width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
+  display: block;
+}
+
+.acciones {
+  display: flex;
+  margin: 0;
+}
+
+.compra {
+  padding: 10px;
+  margin: 10px;
+  width: 25%;
+  box-sizing: border-box;
+  border-radius: 0;
+  background-image: url('https://tw.mitrade.com/cms_uploads/images/article/hi/2023-05-15/Depositphotos_495565948_S.jpg');
+  background-size: cover;
+}
+
+.estado {
+  padding: 10px;
+  margin: 10px;
+  width: 25%;
+  height: 200px;
+  box-sizing: border-box;
+  border-radius: 0;
+  background-image: url('https://g2z7g2s8.rocketcdn.me/wp-content/uploads/2020/04/negociaci%C3%B3n-de-acciones-principal.jpg');
+  background-size: cover;
+}
+
+.venta {
+  padding: 10px;
+  margin: 10px;
+  width: 25%;
+  box-sizing: border-box;
+  border-radius: 0;
+  background-image: url('https://criptotario.com/wp-content/uploads/2019/02/Mercado-de-acciones-blockchain-990x619.jpg');
+  background-size: cover;
+}
+
+.asesor {
+  padding: 10px;
+  margin: 10px;
+  width: 25%;
+  box-sizing: border-box;
+  border-radius: 0;
+  background-image: url('https://img.freepik.com/fotos-premium/pensativo-centrado-exitoso-hombre-caucasico-inversor-acciones-corredor-asesor-financiero-sienta-trabajo_960782-50135.jpg?w=740');
+  background-size: cover;
+}
+
+.bcompra {
+  display: flex;
+  border-radius: 10px;
+  background-color: #353a69;
+  position: absolute;
+  top: 83%; /* Ajusta la posición vertical del círculo dentro del div padre */
+  left: 16%;
+  transform: translate(-100%, -80%);
+}
+
+.bestado {
+  display: flex;
+  border-radius: 10px;
+  background-color: #353a69;
+  position: absolute;
+  top: 83%; /* Ajusta la posición vertical del círculo dentro del div padre */
+  left: 41%;
+  transform: translate(-100%, -80%);
+}
+
+.bventa {
+  display: flex;
+  border-radius: 10px;
+  background-color: #353a69;
+  position: absolute;
+  top: 83%; /* Ajusta la posición vertical del círculo dentro del div padre */
+  left: 91%;
+  transform: translate(-100%, -80%);
+}
+
+.basesor {
+  display: flex;
+  border-radius: 10px;
+  background-color: #353a69;
+  position: absolute;
+  top: 83%; /* Ajusta la posición vertical del círculo dentro del div padre */
+  left: 66%;
+  transform: translate(-100%, -80%);
+}

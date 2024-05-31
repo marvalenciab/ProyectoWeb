@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: auto;
+  width: auto;
+}
+
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 250px;
+  background-color: rgb(147, 153, 215);
+  padding-block-end: 10px;
+  margin-top: 60px;
+  height: 150px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 400px;
+  background-color: rgb(103, 110, 195);
+  padding-block-end: 5px;
+  margin-left: 480px;
+  margin-right: 480px;
+  margin-top: 25px;
+}
+.info1 h5 {
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+.info1 h3 {
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+.info2 {
+  list-style-type: none;
+}
+.info2 li::before {
+  content: '•'; /* Agrega un punto como separador */
+  margin-top: 15px; /* Ajusta el margen superior si es necesario */
+  margin-right: 20px;
+  color: rgb(255, 255, 255); /* Cambia el color del separador si es necesario */
+  font-size: 30px; /* Ajusta el tamaño del separador */
+}
+.info2 h5 {
+  color: white;
+  text-align: center;
+}
