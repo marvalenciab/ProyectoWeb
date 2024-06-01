@@ -11,4 +11,6 @@ auth.post('/iniciar', Iniciar);
 auth.get('/compraracciones', consultarAcciones);
 auth.get('/compraracciones/realizarcompra', realizarCompra);
 auth.get('/estado', estadoAcciones);
+auth.get('/Inventario', Inventario);
+auth.get('/asesor', Asesor);
 export default auth;
