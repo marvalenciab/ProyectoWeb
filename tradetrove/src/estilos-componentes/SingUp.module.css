@@ -72,5 +72,17 @@
 
 .rayita {
   margin-top: 30px;
-  width: 98%;
+  width: 90%;
+}
+.containers {
+  margin-top: 180px;
+  margin-left: 245px;
+  background-color: rgb(147, 153, 215);
+  height: 600px;
+  border-radius: 600px;
+  text-align: center;
+  width: 1200px;
+  align-items: center;
+  position: relative;
+  padding: 20px; /* Agregar padding para margen interno */
 }

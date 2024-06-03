@@ -11,40 +11,36 @@ html {
 }
 
 .containers {
-  margin-top: 80px;
-  margin-left: 350px;
+  margin-top: 180px;
+  margin-left: 245px;
   background-color: rgb(147, 153, 215);
   height: 600px;
-  border-radius: 200px;
+  border-radius: 600px;
   text-align: center;
-  width: 600px;
+  width: 1200px;
   align-items: center;
   position: relative;
   padding: 20px; /* Agregar padding para margen interno */
 }
 
-.containers_t {
+.containers_titulo {
+  width: 300px;
+  height: 80px;
   background: rgb(39, 45, 108);
-  border-radius: 20px;
+  border-radius: 30px;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 62%;
+  transform: translateX(100%);
   top: -40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 8px;
-}
-
-.containers_titulo {
-  color: black;
-  margin: 0;
 }
 
 .containers_letra_titulo {
-  display: flex;
-  flex-direction: column;
+  color: black;
+  margin: 0;
 }
 
 h1 {

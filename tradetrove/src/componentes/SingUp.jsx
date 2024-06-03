@@ -51,7 +51,7 @@ export default function SingUp() {
 
 
   return (
-    <div className={styles.container}>
+    <div className={styles.containers}>
       <div className="container__div containerSingUp">
         <div className={styles.container__div__title}>
           <h1 className={styles.container__div__title__titulo}>SING UP</h1>
