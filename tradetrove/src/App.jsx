@@ -8,13 +8,14 @@ import NavBar from './componentes/NavBar';
 import Principal from './componentes/Principal';
 import SingUp from './componentes/SingUp';
 import SobreNosotros from './componentes/SobreNosaotros';
+import Asesor from './componentes/TargetaAsesor';
+import Venta from './componentes/TargetaVenta';
 import { Sockect } from './pages/principal';
 
 function App() {
   const [activoPrin, setactivoPrin] = useState(false);
 
   return (
-    
     <BrowserRouter>
       {activoPrin === true ? <NavBar NameButton='Eimy'></NavBar> : <NavBar NameButton='Jefernne'></NavBar>}
 
@@ -26,6 +27,8 @@ function App() {
         <Route path='/sobreNosotros' element={<SobreNosotros></SobreNosotros>} />
         <Route path='/targeta' element={<Menuprincipal></Menuprincipal>}></Route>
         <Route path='/compra' element={<Compra></Compra>}></Route>
+        <Route path='/venta' element={<Venta></Venta>}></Route>
+        <Route path='/asesor' element={<Asesor></Asesor>}></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,98 @@
+/* Estilos para la venta */
+.venta {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Estilos para el encabezado de la venta */
+.venta_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el título "Vender Acciones" */
+/* Estilos para el título "Vender Acciones" */
+.venta_header h2 {
+  text-align: center;
+  background-color: #f0f0f0; /* Color de fondo */
+  color: #333; /* Color del texto */
+  padding: 10px; /* Ajuste del espacio interior */
+  border-radius: 5px; /* Bordes redondeados */
+  margin: 0 auto; /* Centrar el título horizontalmente */
+}
+
+/* Estilos para el botón de inventario */
+.btn_inventario {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.btn_inventario:hover {
+  background-color: #218838;
+}
+
+/* Estilos para el inventario */
+.inventario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Estilos para las acciones seleccionadas */
+.acciones_seleccionadas {
+  margin-top: 20px;
+  text-align: center; /* Centrar el contenido */
+}
+
+/* Estilos para el título "Acciones Seleccionadas" */
+.titulo_seleccionadas h3 {
+  background-color: #f0f0f0; /* Color de fondo */
+  color: #333; /* Color del texto */
+  padding: 10px; /* Ajuste del espacio interior */
+  border-radius: 5px; /* Bordes redondeados */
+  margin: 50px;
+}
+/* Estilos para el contenido de las acciones seleccionadas */
+.contenido_seleccionadas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Estilos para las tarjetas de acciones */
+.accion_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para los círculos de acciones */
+/* Estilos para los círculos de acciones */
+/* Estilos para los círculos de acciones */
+.accion_circulo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center; /* Ajusta la posición de la imagen si es necesario */
+}
+
+/* Estilos para los títulos de acciones */
+.accion_titulo {
+  font-size: 16px;
+  text-align: center;
+}

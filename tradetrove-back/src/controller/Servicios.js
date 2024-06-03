@@ -5,29 +5,23 @@ export const Asesor = async (req, res) => {
     const { nombre, foto, Telefono, Correo, idPAis, entidad, Descripcion } = req.body;
     const [rows] = await pool.query('SELECT * FROM asesor');
 
-    const asesores = [];
-
-    for (const asesor of rows) {
-      asesores.push({
-        Nombre: asesor.nombre,
-        foto: asesor.foto,
-        Telefono: asesor.Telefono,
-        Correo: asesor.Correo,
-        idPAis: asesor.IdPAis,
-        entidad: asesor.entidad,
-        Descripcion: asesor.Descripcion,
-      });
-    }
+    const asesores = rows.map((asesor) => ({
+      Nombre: asesor.nombre,
+      foto: asesor.foto,
+      Telefono: asesor.Telefono,
+      Correo: asesor.Correo,
+      idPAis: asesor.IdPAis,
+      entidad: asesor.entidad,
+      Descripcion: asesor.Descripcion,
+    }));
 
     console.log(asesores);
-    res.send('funciono');
-    return res;
+    res.json(asesores); // Enviar los datos del asesor como respuesta en formato JSON
   } catch (error) {
     console.error(error);
-    return res.status(500).json('Error interno del servidor');
+    res.status(500).json('Error interno del servidor');
   }
 };
-
 export const Inventario = async (req, res) => {
   try {
     const { idCompra, idUsuario, id_accion, precioCompra } = req.body;
@@ -67,10 +61,8 @@ export const Inventario = async (req, res) => {
       }
     }
 
-    console.log(inven[0]);
-    console.log('Detalles de las acciones:', acciones);
-    res.send('funciono');
-    return res;
+    // Enviar la respuesta con los datos del inventario en formato JSON
+    res.json({ inventario: inven, acciones: acciones });
   } catch (error) {
     console.error(error);
     return res.status(500).json('Error interno del servidor');
