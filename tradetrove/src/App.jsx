@@ -9,6 +9,7 @@ import Principal from './componentes/Principal';
 import SingUp from './componentes/SingUp';
 import SobreNosotros from './componentes/SobreNosaotros';
 import Asesor from './componentes/TargetaAsesor';
+import EstadoAcciones from './componentes/TargetaEstado';
 import Venta from './componentes/TargetaVenta';
 import { Sockect } from './pages/principal';
 
@@ -29,6 +30,7 @@ function App() {
         <Route path='/compra' element={<Compra></Compra>}></Route>
         <Route path='/venta' element={<Venta></Venta>}></Route>
         <Route path='/asesor' element={<Asesor></Asesor>}></Route>
+        <Route path='/estado' element={<EstadoAcciones></EstadoAcciones>}></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -14,4 +14,23 @@ export const consultarAcciones = async (req, res) => {
     return res.status(500).json({
       message: 'Error. Hubo un error en el proceso de la base de datos',
     });
-  }};
+  }
+};
+
+// Controlador para agregar al carrito
+export const agregarAlCarrito = async (req, res) => {
+  try {
+    const { idUsuario, idAccion, precio } = req.body;
+
+    await pool.query('INSERT INTO compras (idUsuario, idAccion, precio) VALUES (?, ?, ?)', [
+      idUsuario,
+      idAccion,
+      precio,
+    ]);
+    res.status(200).json({ message: 'Añadido al carrito exitosamente' });
+  } catch (error) {
+    return res.status(500).json({
+      message: 'Error al procesar la solicitud',
+    });
+  }
+};
