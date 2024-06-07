@@ -27,16 +27,14 @@ function Comprar() {
     fetchAcciones();
   }, []);
 
-  const handleAñadirAlCarrito = async (idUsuario, idAccion, precio) => {
+  const handleAñadirAlCarrito = async (idUsuario, idAccion, precioCompra) => {
     try {
-      // agregarAlCarrito({ idUsuario, idAccion, precio });
-      // Envía la información al backend para insertarla en la tabla de compras
       const response = await fetch('http://localhost:3000/compraracciones', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ idUsuario, idAccion, precio }),
+        body: JSON.stringify({ idUsuario, idAccion, precioCompra }),
       });
       if (!response.ok) {
         throw new Error(`Error al añadir al carrito: ${response.statusText}`);
@@ -64,6 +62,7 @@ function Comprar() {
       onAñadirAlCarrito={(precio) => handleAñadirAlCarrito(idUsuario, d.id_accion, precio)}
     />
   ));
+
   return (
     <div className={styles.App}>
       <div className={styles.titulos}>

@@ -8,7 +8,7 @@ const auth = Router();
 auth.post('/Registrar', Register);
 auth.post('/iniciar', Iniciar);
 auth.get('/compraracciones', consultarAcciones);
-auth.get('/agregaralcarrito', agregarAlCarrito);
+auth.post('/compraracciones', agregarAlCarrito);
 auth.get('/estado', estadoAcciones);
 auth.get('/Inventario', Inventario);
 auth.get('/asesor', Asesor);
